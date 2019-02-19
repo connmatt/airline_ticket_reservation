@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelReservationActivity">
+
+    <TextView
+        android:id="@+id/UsrReservation"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reservationInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reservationInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="12dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/flightNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsrReservation" />
+
+    <EditText
+        android:id="@+id/flightNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Flight Number"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/dltBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservationInfo" />
+
+    <Button
+        android:id="@+id/dltBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete Reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/flightNum"
+        app:layout_constraintTop_toBottomOf="@+id/flightNum" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AirlineTicketReservation</string>
+    <string name="manage_system">Manage System</string>
+    <string name="cancel_reservation">Cancel Reservation</string>
+    <string name="reserve_seat">Reserve Seat</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

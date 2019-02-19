@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/createAccAct_btn"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Create Account"
+        app:layout_constraintBottom_toTopOf="@+id/reserveSeatAct_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/reserveSeatAct_btn"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="Reserve Seat"
+        app:layout_constraintBottom_toTopOf="@+id/cancelReservationAct_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccAct_btn" />
+
+    <Button
+        android:id="@+id/cancelReservationAct_btn"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="Cancel Reservation"
+        app:layout_constraintBottom_toTopOf="@+id/manageSystemAct_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reserveSeatAct_btn" />
+
+    <Button
+        android:id="@+id/manageSystemAct_btn"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Manage System"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelReservationAct_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        android:text="WELCOME TO YOUR AIRLINES"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/createAccAct_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
